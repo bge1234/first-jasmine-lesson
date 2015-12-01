@@ -18,5 +18,15 @@ describe("#findMin", function () {
     };
     expect(myFunctions.findMin(person1, person2)).toEqual("Sara");
   })
-  it("given two people objects, when both peo people are the same age, ")
+  it("given two people objects, when both people are the same age,it returns 'They\'re the same age!!'", function() {
+    var person1 = {
+      age: 30,
+      name: "Howard"
+    };
+    var person2 = {
+      age: 30,
+      name: "Sara"
+    };
+  expect(myFunctions.findMin(person1, person2)).toEqual("They're the same age!!")
+  })
 })
